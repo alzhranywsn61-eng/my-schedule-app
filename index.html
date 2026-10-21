@@ -4,10 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>نظام متابعة الجداول</title>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            background-color: #f4f5f9;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header-title {
+            color: #3b2054;
+            margin-top: 30px;
+            margin-bottom: 5px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .author-name {
+            color: #3b2054;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 30px;
+        }
+
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            padding: 25px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .card h3 {
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+
+        .btn {
+            background-color: #3b2054;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
     <h1 class="header-title">مرحباً بكِ في نظام متابعة الجداول</h1>
     <div class="author-name">👩🏻‍💻 وسن الزهراني</div>
 
-    <!-- البطاقات -->
     <div class="card-container">
         <div class="card">
             <h3>جدول المهام الأسبوعية</h3>
@@ -19,79 +81,6 @@
             <a href="waiting.html" class="btn">عرض الحصص</a>
         </div>
     </div>
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            background-color: #f4f5f9;
-            font-family: sans-serif;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .welcome-container {
-            width: 90%;
-            max-width: 480px;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .welcome-title {
-            color: #4a2574;
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 30px;
-        }
-
-        .card-box {
-            background: #ffffff;
-            border-radius: 16px;
-            padding: 30px 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            border: 1px solid #eaeaea;
-        }
-
-        .card-box h3 {
-            color: #333333;
-            font-size: 19px;
-            margin-top: 0;
-            margin-bottom: 20px;
-        }
-
-        .card-btn {
-            display: inline-block;
-            background-color: #4a2574;
-            color: #ffffff;
-            padding: 12px 32px;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 15px;
-            transition: background-color 0.3s;
-        }
-
-        .card-btn:hover {
-            background-color: #351a54;
-        }
-    </style>
-</head>
-<body>
-    <div class="welcome-container">
-        <h2 class="welcome-title">مرحباً بكِ في نظام متابعة الجداول</h2>
-
-        <div class="card-box">
-            <h3>جدول المهام الأسبوعية</h3>
-            <a href="followup.html" class="card-btn">فتح الجدول</a>
-        </div>
-
-        <div class="card-box">
-            <h3>حصص الانتظار</h3>
-            <a href="waiting.html" class="card-btn">عرض الحصص</a>
-        </div>
-    </div>
 
 </body>
-</html> 
+</html>
