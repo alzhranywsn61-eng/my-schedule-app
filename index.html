@@ -3,120 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>حصص الانتظار</title>
+    <title>نظام متابعة الجداول</title>
     <style>
-        body { font-family: Tahoma, sans-serif; background-color: #f4f4f9; margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; }
-        .navbar { background-color: #3b2054; width: 100%; padding: 12px 0; display: flex; justify-content: center; gap: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); position: sticky; top: 0; z-index: 1000; flex-wrap: wrap; }
-        .navbar a { color: #ffffff; text-decoration: none; font-size: 14px; font-weight: bold; transition: 0.3s; }
-        .navbar a:hover, .navbar a.active { color: #dcd6e7; text-decoration: underline; }
-        .content-body { padding: 40px; text-align: center; width: 100%; max-width: 700px; }
-        h2 { color: #3b2054; }
-        .container { background: #fff; padding: 30px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-top: 20px; }
-        table {
-    width: 100%;
-    border-collapse: collapse; /* لمنع تكرار الخطوط وتداخلها */
-    margin-top: 10px;
-}
+        html, body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-color: #f4f5f9;
+            font-family: sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-th, td {
-    border: 1px solid #ccc; /* إضافة إطار رمادي خفيف حول الخلايا */
-    padding: 8px;
-    text-align: center;
-}
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
+        .welcome-container {
+            width: 90%;
+            max-width: 480px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .welcome-title {
+            color: #4a2574;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .card-box {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 30px 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #eaeaea;
+        }
+
+        .card-box h3 {
+            color: #333333;
+            font-size: 19px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .card-btn {
+            display: inline-block;
+            background-color: #4a2574;
+            color: #ffffff;
+            padding: 12px 32px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+            transition: background-color 0.3s;
+        }
+
+        .card-btn:hover {
+            background-color: #351a54;
+        }
     </style>
 </head>
 <body>
-    <div class="navbar">
-    <a href="index.html">الواجهة</a>
-    <a href="followup.html">جدول المهام الأسبوعية</a>
-    <a href="waiting.html">حصص الانتظار</a>
-</div>
 
-    <div class="table-container">
-<table>
-    <thead>
-        <tbody>
-    <tr>
-        <th>الحصة</th>
-        <th>المعلمة الغائبة</th>
-        <th>الفصل</th>
-        <th>المعلمة البديلة</th>
-    </tr>
-    <tr>
-        <th>الأحد</th>
-       <td><input type 
-="text"size="10" placeholders" 
-Lia usi "></td>
-<td><input type 
-="text" size="5" placeholders" 
-Lia usi "></td><td><input type 
-="text"size="10"placeholders" 
-Lia usi "></td>
-    <tr>
-        <th>الإثنين</th>
-      <td><input type 
-="text"size=" 10"placeholders" 
-Lia usi "></td>  
-<td><input type 
-="text"size= " 5" placeholders" 
-Lia usi "></td>
-<td><input type 
-="text"size="10"placeholders" 
-Lia usi "></td>
-    </tr>
-    <tr>
-        <th>الثلاثاء</th>
-        <td><input type 
-="text"size="10"placeholders" 
-Lia usi "></td>
-<td><input type 
-="text"size= " 5" placeholders" 
-Lia usi "></td>
-<td><input type 
-="text"size="10"placeholders" 
-Lia usi "></td>
-        <tr>
-        <th>الأربعاء</th>
-        <td><input type 
-="text"size="10"placeholders" 
-Lia usi "></td>
-<td><input type 
-="text"size= " 5" placeholders" 
-Lia usi "></td>
-<td><input type 
-="text"size="10"placeholders" 
-Lia usi "></td>
-        </tr>
-        <tr>
-            <th>الخميس</th>
-            <td><input type 
-="text"size="10"placeholders" 
-Lia usi "></td>
-<td><input type 
-="text"size= " 5" placeholders" 
-Lia usi "></td>
-<td><input type 
-="text"size="10"placeholders" 
-Lia usi "></td>
-        </tr>
-    </tbody>
-    </thead>
-</table>
+    <div class="welcome-container">
+        <h2 class="welcome-title">مرحباً بكِ في نظام متابعة الجداول</h2>
+
+        <div class="card-box">
+            <h3>جدول المهام الأسبوعية</h3>
+            <a href="followup.html" class="card-btn">فتح الجدول</a>
+        </div>
+
+        <div class="card-box">
+            <h3>حصص الانتظار</h3>
+            <a href="waiting.html" class="card-btn">عرض الحصص</a>
+        </div>
     </div>
-    <button onclick="window.print()" style="background-color: #4A154B; color: white; padding: 12px 25px; border: none; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; display: block; margin: 25px auto;">حفظ كـ PDF</button>
 
-<style>
-@media print {
-    /* إخفاء الزر وبقية أقسام الموقع غير المرغوبة عند حفظ أو طباعة الملف */
-    button, header, nav {
-        display: none !important;
-    }
-}
-</style>    
 </body>
-</html>
-
+</html> 
